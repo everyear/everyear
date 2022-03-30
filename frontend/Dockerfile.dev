@@ -1,8 +1,0 @@
-FROM node:16.14.2
-
-WORKDIR /project/frontend
-
-COPY frontend/package.json ./
-COPY frontend/package-lock.json ./
-
-RUN npm install
