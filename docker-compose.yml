@@ -1,0 +1,30 @@
+version: "3"
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: ./compose/Dockerfile_react
+    ports:
+      - "3000:3000"
+    volumes:
+      - /project/frontend/node_modules
+      - ./frontend:/project/frontend
+    command: >
+      bash -c "
+      mkdir -p node_modules/.cache
+      && chmod -R 777 node_modules/.cache
+      && npm run start
+      "
+    stdin_open: true
+
+  backend:
+    build:
+      context: .
+      dockerfile: ./compose/Dockerfile_django
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./:/project
+    command: > 
+      bash -c "python manage.py runserver 0:8000"
