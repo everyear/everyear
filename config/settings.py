@@ -40,9 +40,7 @@ DJANGO_APPS = [
 ]
 
 THIRD_PARTY_APPS = [
-    'allauth',
-    'allauth.account',
-    'allauth.socialaccount',
+    
 ]
 
 PROJECT_APPS = [
@@ -144,7 +142,7 @@ AUTH_USER_MODEL = 'users.User'
 
 AUTHENTICATION_BACKENDS = (
     # Needed to login by custom User model, regardless of `allauth`
-    "django.contrib.auth.backends.ModelBackend",
+    ("django.contrib.auth.backends.ModelBackend"),
 
     # `allauth` specific authentication methods, such as login by e-mail
     # "allauth.account.auth_backends.AuthenticationBackend",
