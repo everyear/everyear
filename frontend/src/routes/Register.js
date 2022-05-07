@@ -327,6 +327,7 @@ export default function Register() {
               </Grid> */}
             </Grid>
             <Button
+              // href="/"
               type="submit"
               fullWidth
               color="neutral"

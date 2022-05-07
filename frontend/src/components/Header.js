@@ -23,6 +23,7 @@ function Header(props) {
       <Toolbar sx={{ borderBottom: 1, borderColor: 'divider' }}>
         {/* <Button size="small">Every-year</Button> */}
         <Typography
+          href="/"
           component="h2"
           variant="h5"
           color="inherit"

@@ -74,7 +74,7 @@ export default function Blog() {
       </Container>
       <Footer
         title=""
-        description="Something here to give the footer a purpose!"
+        description=""
       />
     </ThemeProvider>
   );
