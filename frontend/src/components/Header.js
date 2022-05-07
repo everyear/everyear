@@ -23,6 +23,7 @@ function Header(props) {
       <Toolbar sx={{ borderBottom: 1, borderColor: 'divider' }}>
         {/* <Button size="small">Every-year</Button> */}
         <Typography
+          href="/"
           component="h2"
           variant="h5"
           color="inherit"
@@ -33,8 +34,8 @@ function Header(props) {
           {title}
         </Typography>
         <ThemeProvider theme={theme}>
-          <Button color='neutral' variant="outlined" size="small" sx={{marginRight: 1}}>로그인</Button>
-          <Button color='neutral' variant="contained" size="small">회원가입</Button>
+          <Button color='neutral' variant="outlined" size="small" href="/login" sx={{marginRight: 1}}>로그인</Button>
+          <Button color='neutral' variant="contained" size="small" href="/register">회원가입</Button>
         </ThemeProvider>
       </Toolbar>
       <Toolbar

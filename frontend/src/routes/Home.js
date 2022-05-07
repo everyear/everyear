@@ -3,10 +3,10 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import Header from './Header';
-import MainFeaturedPost from './MainFeaturedPost';
-import FeaturedPost from './FeaturedPost';
-import Footer from './Footer';
+import Header from '../components/Header';
+import MainFeaturedPost from '../components/MainFeaturedPost';
+import FeaturedPost from '../components/FeaturedPost';
+import Footer from '../components/Footer';
 
 const sections = [
   { title: '자유게시판', url: '#' },
@@ -70,14 +70,11 @@ export default function Blog() {
               <FeaturedPost key={post.title} post={post} />
             ))}
           </Grid>
-          {/* <Grid container spacing={5} sx={{ mt: 3 }}>
-            <Main title="From the firehose" posts={posts} />
-          </Grid> */}
         </main>
       </Container>
       <Footer
         title=""
-        description="Something here to give the footer a purpose!"
+        description=""
       />
     </ThemeProvider>
   );
