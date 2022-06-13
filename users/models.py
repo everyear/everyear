@@ -37,7 +37,7 @@ class User(AbstractUser):
         blank=False, 
         unique=True,
         verbose_name='nickname',
-        help_text=_('웹상에서 사용할 닉네임입니다.')
+        help_text=_('웹상에서 사용할 닉네임입니다.'),
     )
     name = models.CharField(
         max_length=10,
